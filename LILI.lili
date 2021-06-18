@@ -64,7 +64,7 @@ class Statusbar:
         if isinstance(args[0], bool):
             self.status.set("Your LILI document has been saved!")
         else:
-            self.status.set("LILI'S EDITOR IS THINKING ABOUT LISA...")
+            self.status.set("LILI'S EDITOR IS WAITING...")
 
 
 class PyText:
@@ -164,3 +164,4 @@ if __name__ == "__main__":
     master = tk.Tk()
     pt = PyText(master)
     master.mainloop()
+
