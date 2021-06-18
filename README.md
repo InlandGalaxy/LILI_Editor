@@ -1,5 +1,5 @@
 # LILI_Editor
-This an Editor for my LILI Text Format.
+This an Editor for my LILI Text Format and other formats. It's like a pro version of GalaxyWrite.
 
 <img src="https://user-images.githubusercontent.com/65157905/122523342-32339a80-d017-11eb-9c06-8fd8b5aed2bc.png" width="250" height="250"> 
 
