@@ -51,13 +51,13 @@ class Statusbar:
 
     def __init__(self, parent):
 
-        font_specs = ("primetime", 8)
+        font_specs = ("primetime", 12)
         
         self.status = tk.StringVar()
         self.status.set("LILI'S EDITOR IS WAITING...")
 
-        label = tk.Label(parent.textarea, textvariable=self.status, fg="black",
-                         bg="lightgrey", anchor='sw', font=font_specs)
+        label = tk.Label(parent.textarea, textvariable=self.status, fg="pink",
+                         bg="black", anchor='sw', font=font_specs)
         label.pack(side=tk.BOTTOM, fill=tk.BOTH)
 
     def update_status(self, *args):
@@ -151,17 +151,21 @@ class PyText:
         except Exception as e:
             print(e)
 
+
     def bind_shortcuts(self):
         self.textarea.bind('<Control-n>', self.new_file)
         self.textarea.bind('<Control-o>', self.open_file)
         self.textarea.bind('<Control-s>', self.save)
         self.textarea.bind('<Control-S>', self.save_as)
         self.textarea.bind('<Key>', self.statusbar.update_status)
-        
+
 
 
 if __name__ == "__main__":
     master = tk.Tk()
     pt = PyText(master)
     master.mainloop()
+
+
+
 
